@@ -1,0 +1,3656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>Documentation | Fazpass</title>
+  <meta name="description" content="Your ThemeForest item Name and description">
+  <meta name="author" content="harnishdesign.net">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png"
+              alt="iDocs Template" />
+            <span class="text-2 ml-4 note">Documentation</span></a>
+
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <!-- <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Another Action</a>
+                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+              </ul>
+            </li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        </ul> -->
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#request_start">Request</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#request_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#reqeust_preacquired">Pre Acquired</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_integration_flow">Integration Flow</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_http">HTTP Request Endpoint</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_api_otp">API Request OTP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_example_sms">Request response example for SMS</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#request_example_wa">Request response example for
+                  Whatsapp</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_example_misscall">Request response example for
+                  Misscall</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_example_email">Request response example for
+                  Email</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_api_validate_otp">API Validate OTP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_validation_sms_email_wa">OTP validation for
+                  SMS,Email and Whatsapp</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_validation_misscall">OTP validation for Miss
+                  Call</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_misc">MISC</a></li>
+              <li class="nav-item"><a class="nav-link" href="#request_ui_ux">UI / UX Suggestion</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#generate_start">Generate</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#generate_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_preacquired">Pre Acquired</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_generate_endpoint">HTTP Generate Endpoint</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#generate_generate_otp">API Generate OTP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_otp_sms">Generate OTP SMS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_otp_wa">Generate OTP Whatsapp</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#generate_otp_misscall">Generate OTP Misscall
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_otp_email">Generate OTP Email</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_api_validate_otp">API Validate OTP (optional)
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_validation_sms_email_wa">OTP validation for SMS
+                  and Whatsapp</a></li>
+              <li class="nav-item"><a class="nav-link" href="#generate_validation_misscall">OTP validation for Miss
+                  Call</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#send_start">Send</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#send_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#send_preacquired">Pre Acquired</a></li>
+              <li class="nav-item"><a class="nav-link" href="#send_endpoint">HTTP Generate Endpoint</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#send_otp">API Send OTP</a></li>
+              <li class="nav-item"><a class="nav-link" href="#send_otp_sms">Send OTP SMS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#send_otp_wa">Send OTP Whatsapp</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#send_api_validate_otp">API Validate OTP (optional)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#blasting_start">Blasting</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#blasting_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_preacquired">Pre Acquired</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_send_endpoint">HTTP Send Endpoint</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_api_blasting">API Blasting message</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_sms_wa_email">Send Long Message SMS / Whatsapp
+                  Long
+                  number / Email</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_loop_html">Looping And HTML Render For Email
+                  (Additional)</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_attachment">Attachment
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="#blasting_misc">MISC
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#callback_start">Callback Usage</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#callback_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#callback_method_payload">Method and Payload</a></li>
+              <li class="nav-item"><a class="nav-link" href="#callback_apendix">Apendix</a>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#health_start">Health Status</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#health_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#health_system_down">System Down</a></li>
+              <li class="nav-item"><a class="nav-link" href="#health_suggest">Suggest</a>
+              <li class="nav-item"><a class="nav-link" href="#health_webhook">Webhook</a>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#android_start">Fazpass-Android (Fazpass Seamless)</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#android_start">Getting Started</a></li>
+              <li class="nav-item"><a class="nav-link" href="#android_installation">Installation</a></li>
+              <li class="nav-item"><a class="nav-link" href="#android_usage">Usage</a>
+              <li class="nav-item"><a class="nav-link" href="#android_header_enrichment">Header Enrichment</a>
+              <li class="nav-item"><a class="nav-link" href="#android_trusted_device">Trusted Device</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <section id="request_start">
+            <h1>Request</h1>
+            <h2>Getting Started</h2>
+            <p>What is Fazpass? We are a company that is focused to help you guys to simplify the integration process
+              for OTP verification, by bringing OTP aggregator as our services.</p>
+            <p>What is OTP aggregator ? OTP aggregator is a service that capable to simplify your integration process
+              by only one time writing a code, you can easily jump from one platform to another, jumping from SMS OTP
+              into Misscall OTP or Whatsapp OTP or other platform by only one click in our dashboard.
+            </p>
+            <p>Each platform will have the possibility of more than 1 vendor. What is a vendor? vendor is a service from
+              1 or more companies that have specific services for each platform.
+            </p>
+            <img src="assets/images/rq-1.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-2.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-3.png" class="mw-50" alt="Responsive image">
+            <hr class="divider">
+
+            <section id="reqeust_preacquired">
+              <h2>Pre Acquired</h2>
+              <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
+                <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
+                registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
+                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
+                  target="_blank">here</a> for our staging. we will send it to you by email, you
+                will get
+                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                  href="https://wa.me/6285171535123" target="_blank">here</a>.
+                to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
+                  target="_blank">here</a> for <b>Production env</b>
+              </p>
+              <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
+                use
+              </p>
+              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
+                different account and different token
+              </p>
+              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                setting the Authorization HTTP header. Please refer to the detail below for further information about
+                how and where the Authorization can be implemented.</p>
+
+              <p class="alert alert-info mb-4">
+                Authorization: <b>{{type}} {{Token}}</b> <br />
+                type = <b>Bearer Token</b>
+                <br />
+                Token = <b>merchant_key</b>
+              </p>
+
+              <img src="assets/images/rq-4.png" class="mw-50" alt="Responsive image">
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_integration_flow">
+              <h2>Integration Flow</h2>
+              <img src="assets/images/rq-5.png" class="mw-50" alt="Responsive image">
+              <ol>
+                <li>
+                  <p class="mb-0"><b>Admin Side</b></p>
+                  <p>On the Admin side, the admin should do few things before the engineer can implement the API
+                    correctly. in this part, we will guide you, how to setup a gateway before you the engineer can
+                    integrate and use the Generate and verification API
+                  </p>
+                  <ol class="mb-3">
+                    <li>Admin login to Fazpass dashboard
+                    </li>
+                    <li>
+                      Admin go to proxy menu <br />
+                      <img src="assets/images/rq-6.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>Admin Add new gateway <br />
+                      <img src="assets/images/rq-7.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>
+                      Admin fill the form
+                      <table class="table table-bordered table-striped my-2">
+                        <thead>
+                          <tr>
+                            <th>Field</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Gateway </td>
+                            <td>Your gateway name </td>
+                          </tr>
+                          <tr>
+                            <td>Channel Name </td>
+                            <td>Select otp channel (misscall, SMS,email, whatsapp,etc)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Select Provider Name </td>
+                            <td>Select your desire provider e.x : Citcall
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Subject / title</td>
+                            <td>user for email OTP title (will be ignored for SMS,whatsapp and miss call)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Message </td>
+                            <td> Custom your message, please ensure use “{OTP}” to insert generate OTP in between your
+                              custom message (will be ignored for miss call and official whatsapp)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OTP Length </td>
+                            <td> min 4 max 8
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Note / purpose </td>
+                            <td> purpose for the gateway e.x login, register, transaction, etc
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Credential key </td>
+                            <td> If you have a special price from the provider, feel free to insert a credential key
+                              here.
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Enable gateway</td>
+                            <td> set gateway enable by clicking it
+
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <img src="assets/images/rq-8.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>Save the data <p class="mb-0">This step for the admin is finished. and the engineer can start
+                        integration in
+                        the API
+                        side
+                      </p>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <p class="mb-0"><b>Engineering Side</b></p>
+                  <p>On the engineering side, you as engineer will integrate Fazpass API in a view step.</p>
+                  <ol>
+                    <li>Login to dashboard</li>
+                    <li>
+                      Go to proxy menu
+                      <img src="assets/images/rq-9.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>
+                      See the gateway purpose and gateway key
+                      <img src="assets/images/rq-10.png" class="img-fluid" alt="Responsive image">
+                      <p>If you get the gateway key, you can start to integrate the Fazpass OTP using <b>API
+                          generate</b> and then validate it using <b>API verification</b></p>
+                      <p class="mb-0">Before we jump to API, this is endpoint env for our setup</p>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_http">
+              <h2>HTTP Request Endpoint</h2>
+              <p>This Request Endpoint is needed for your integration process so that your system can request OTP
+                through Fazpass services</p>
+
+              <p class="alert alert-info mb-4">
+                <b>Base URL</b> <a href="https://api.fazpass.com/" target="_blank">https://api.fazpass.com/</a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_api_otp">
+              <h2>API Request OTP</h2>
+              <p>This Api will allow you to send OTP from any provider selected in the gateway with the OTP being
+                masked. so we will generate and mask the OTP and send it to the user. and the user will verify it.
+              </p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/request</b>
+
+{
+    "Email": "Your Email",
+    "phone": "Your Phone",
+    "gateway_key": "gateway from dashboard"
+}
+                </code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Json Type </td>
+                    <td>Raw </td>
+                    <td>JSON method needed to use in the body </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>phone </td>
+                    <td>string </td>
+                    <td>end-user mobile number </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>gateway key </td>
+                    <td>string </td>
+                    <td>input with gateway key from the dashboard </td>
+                    <td>required </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_example_sms">
+              <h2>Request response example for SMS</h2>
+              <img src="assets/images/rq-11.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_example_wa">
+              <h2>Request response example for Whatsapp</h2>
+              <img src="assets/images/rq-12.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="alert alert-info">For Whatsapp official if the number is new to the agregator system, they will
+                check if the number have an association with whatsapps or not.
+                if the checking success, then you need to HIT AGAIN to send the OTP.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_example_misscall">
+              <h2>Request response example for Misscall</h2>
+              <img src="assets/images/rq-13.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Prefix</td>
+                    <td>Number </td>
+                    <td>Prefix used for phone call
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_example_email">
+              <h2>Request response example for Email</h2>
+              <img src="assets/images/rq-14.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_api_validate_otp">
+              <h2>API Validate OTP</h2>
+              <p>You will need to implement this API to verified the Requested OTP from above API
+              </p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/verify</b>
+
+{
+  "otp_id": "your OTP ID",
+  "otp":"OTP inputed from user"
+}</code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>OTP ID</td>
+                    <td>String </td>
+                    <td>OTP id generated from request API</td>
+                  </tr>
+                  <tr>
+                    <td>OTP </td>
+                    <td>Number </td>
+                    <td>OTP number inserted by user
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_validation_sms_email_wa">
+              <h2>OTP validation for SMS,Email and Whatsapp</h2>
+              <img src="assets/images/rq-15.png" class="mw-50" alt="Responsive image"><br>
+              <img src="assets/images/rq-16.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_validation_misscall">
+              <h2>OTP validation for Miss Call</h2>
+              <img src="assets/images/rq-17.png" class="mw-30" alt="Responsive image"><br>
+              <img src="assets/images/rq-18.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_misc">
+              <h2>MISC</h2>
+              <p>this section will redirect you if you have other flow implemented in your system.</p>
+              <p>If you <b>already</b> create an OTP <b>generator</b> and <b>verification</b> you can <b>read</b> <a
+                  href="https://docs.google.com/document/d/1lzdLKj-d2vc0oePDm1NQ4E1RhmOjoCVVw0zI6mbnhhI/edit?usp=sharing"
+                  target="_blank">this document</a> for further information.</p>
+              <p>If you <b>already</b> have the <b>verification system</b> but you want <b>fazpass to generate and send
+                  your OTP</b> you can <b>read</b> <a
+                  href="https://docs.google.com/document/d/1331Gk52C6IzDytJbrbbl9NHzxxESF5OJZUP58FSBgig/edit?usp=sharing"
+                  target="_blank">this document</a> for further information.</p>
+              <p>for other function in admin dashboard, you can refer to <a
+                  href="https://docs.google.com/document/d/1WcmghzN5Rqh8o9LpVdCrepnyrdKl_Hj9dKfqzH_x2qw/edit?usp=sharing"
+                  target="_blank"></a>this document</a></p>
+              <p>we also have ui/ux suggestion in the bellow section of this document</p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="request_ui_ux">
+              <h2>UI / UX SUGGESTION</h2>
+              <p>Our services will provide many service methods for you to verify your user. As for flexibility, there
+                will be some different methods in the UI or UX for your application. In this section we will give some
+                suggestions for the UI or UX of the application regardless of the OTP verification based on what method
+                you will use. </p>
+              <p>Our Services may consist of SMS, Whatsapp, miss call, email and other user verification methods. these
+                services need different UI in the implementation especially for miss calls.
+              </p>
+              <p>How to determine what UI or UX to use? In the previous section, after your engineer integrates the
+                “Request API” every time you call the API, your system will get a response like shown below.
+              </p>
+              <img src="assets/images/rq-19.png" class="mw-50" alt="Responsive image">
+              <p>In the response you will see our services will give you response parameters such as ID, OTP(masked),
+                OTP_lenght and <b>CHANNEL</b>. As you can see, the <b>CHANNEL</b> parameter will be filled with “what
+                method you use for verification” and you will be able to determine what kind of UI or UX to use based on
+                what channel.
+              </p>
+              <p><b>Channel response list</b></p>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sms</td>
+                    <td>this mean you use SMS as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>misscall</td>
+                    <td>this mean you use miss call as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp</td>
+                    <td>this mean you use official whatsapp channel as sending method for the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp Long Number</td>
+                    <td>this mean you use unofficial whatsapp channel / long number whatsapp version as sending method
+                      for
+                      the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>email</td>
+                    <td>this mean you use email as sending method for the OTP</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p><b>Custome Personalize Messages
+                </b></p>
+              <p>if you need to more personalize message such as you need to add name by adding “parameter_1” to your
+                api
+                and dashboard like what shown bellow</p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/request</b>
+
+{
+  "Email": "Your Email", (can be empty)
+  "phone": "Your Phone",  (can be empty)
+  "gateway_key": "gateway from dashboard"
+  "params": [
+        {
+            "tag": "parameter_1",(optional)
+            "value": "value 1"
+        },
+        {
+            "tag": "parameter_2", (optional)
+            "value": "value 2"
+        }
+    ]
+}</code></pre>
+
+              <img src="assets/images/rq-20.png" class="mw-50" alt="Responsive image"><br />
+              <img src="assets/images/rq-21.png" class="mw-50" alt="Responsive image">
+              <p class="alert alert-info">
+                Note : this custom personalize will only work for sms, email and WA long number
+              </p>
+              <p><b>UI suggest
+                </b></p>
+              <p>For miss call we suggest following ui to implement </p>
+              <img src="assets/images/rq-22.png" class="mw-50" alt="Responsive image">
+              <p>For sms / WA we suggest following ui to implement</p>
+              <img src="assets/images/rq-23.png" class="mw-50" alt="Responsive image"><br />
+              <img src="assets/images/rq-24.png" class="mw-50" alt="Responsive image">
+              <p>or Email we suggest following ui to implement</p>
+              <img src="assets/images/rq-25.png" class="mw-50" alt="Responsive image">
+            </section>
+          </section>
+
+          <hr class="divider">
+
+          <section id="generate_start">
+            <h1>Generate</h1>
+            <h2>Getting Started</h2>
+            <p>If you read this document, you might have read the “request api” document before. if you are not yet read
+              it, you can read it <a
+                href="https://docs.google.com/document/d/1x3zpgW7HGaqVwM68qq-0NURzQfbFDtbv1pkr7CEnRRc/edit?usp=sharing"
+                target="_blank">here</a>.</p>
+            <p>Each platform will have the possibility of more than 1 vendor. What is a vendor? vendor is a service from
+              1 or more companies that have specific services for each platform.
+            </p>
+            <img src="assets/images/rq-1.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-2.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-3.png" class="mw-50" alt="Responsive image">
+            <hr class="divider">
+
+            <section id="generate_preacquired">
+              <h2>Pre Acquired</h2>
+              <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
+                <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
+                registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
+                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
+                  target="_blank">here</a> for our staging. we will send it to you by email, you
+                will get
+                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                  href="https://wa.me/6285171535123" target="_blank">here</a>.
+                to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
+                  target="_blank">here</a> for <b>Production env</b>
+              </p>
+              <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
+                use
+              </p>
+              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
+                different account and different token
+              </p>
+              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                setting the Authorization HTTP header. Please refer to the detail below for further information about
+                how and where the Authorization can be implemented.</p>
+
+              <p class="alert alert-info mb-4">
+                Authorization: <b>{{type}} {{Token}}</b> <br />
+                type = <b>Bearer Token</b>
+                <br />
+                Token = <b>merchant_key</b>
+              </p>
+
+              <img src="assets/images/rq-4.png" class="mw-50" alt="Responsive image">
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_generate_endpoint">
+              <h2>HTTP Generate Endpoint</h2>
+              <p>This Request Endpoint is needed for your integration process so that your system can request OTP
+                through Fazpass services</p>
+              <p class="alert alert-info mb-4">Base URL https://api.fazpass.com/
+              </p>
+              <p class="alert alert-warning mb-4">Staging http://34.101.82.250:3002/
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_generate_otp">
+              <h2>API Generate OTP</h2>
+              <p>Before you guys can use api generate, you must set a gateway in the dashboard. You can read how to set
+                the gateway in the dashboard <a
+                  href="https://docs.google.com/document/d/1x3zpgW7HGaqVwM68qq-0NURzQfbFDtbv1pkr7CEnRRc/edit?usp=sharing"
+                  target="_blank"></a>here.</p>
+              <p>This Api will allow you to send OTP from any provider selected in the gateway with the OTP generated
+                from <b>our system with no masking</b>. We will send it to the user. and the user will verify it.</p>
+
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/generate</b>
+{
+    "Email": "Your Email",
+    "phone": "Your Phone",
+    "gateway_key": "gateway from dashboard"
+}</code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Json Type </td>
+                    <td>Raw </td>
+                    <td>JSON method needed to use in the body </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>phone </td>
+                    <td>string </td>
+                    <td>end-user mobile number </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>gateway key </td>
+                    <td>string </td>
+                    <td>input with gateway key from the dashboard </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>Number </td>
+                    <td>input your generated OTP number </td>
+                    <td>required </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_otp_sms">
+              <h2>Generate OTP SMS</h2>
+              <img src="assets/images/ge-1.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_otp_wa">
+              <h2>Generate OTP Whatsapp</h2>
+              <img src="assets/images/ge-2.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="alert alert-info">note : For Whatsapp official if the number is new to the agregator system,
+                they will
+                check if the number have an association with whatsapps or not.
+                if the checking success, then you need to HIT AGAIN to send the OTP.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_otp_misscall">
+              <h2>Generate OTP Misscall</h2>
+              <img src="assets/images/ge-3.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Prefix</td>
+                    <td>Number </td>
+                    <td>Prefix used for phone call
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_otp_email">
+              <h2>Generate OTP Email</h2>
+              <img src="assets/images/ge-4.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_api_validate_otp">
+              <h2>API Validate OTP (optional)</h2>
+              <p>If you already have the verification system, you can choose either implement this verification API or
+                you can just skip it.
+              </p>
+              <p>IF you guys skip this API, you won’t get any statistics regarding OTP send statistics, validation
+                success statistics and you can’t use automatic vendor switcher.
+                But if you implement our verification API, you can see and get all data and you can use our automatic
+                switcher feature.
+              </p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/verify</b>
+
+{
+  "otp_id": "your OTP ID",
+  "otp":"OTP inputed from user"
+}</code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>OTP ID</td>
+                    <td>String </td>
+                    <td>OTP id generated from request API</td>
+                  </tr>
+                  <tr>
+                    <td>OTP </td>
+                    <td>Number </td>
+                    <td>OTP number inserted by user
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_validation_sms_email_wa">
+              <h2>OTP validation for SMS and Whatsapp</h2>
+              <img src="assets/images/rq-15.png" class="mw-50" alt="Responsive image"><br>
+              <img src="assets/images/rq-16.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="generate_validation_misscall">
+              <h2>OTP validation for Miss Call</h2>
+              <img src="assets/images/ge-5.png" class="mw-30" alt="Responsive image"><br>
+              <img src="assets/images/rq-18.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p><b>Channel Response List</b></p>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sms</td>
+                    <td>this mean you use SMS as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>misscall</td>
+                    <td>this mean you use miss call as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp</td>
+                    <td>this mean you use official whatsapp channel as sending method for the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp Long Number</td>
+                    <td>this mean you use unofficial whatsapp channel / long number whatsapp version as sending method
+                      for
+                      the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>email</td>
+                    <td>this mean you use email as sending method for the OTP</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p><b>Custome Personalize Messages
+                </b></p>
+              <p>if you need to more personalize message such as you need to add name by adding “parameter_1” to your
+                api
+                and dashboard like what shown bellow</p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/request</b>
+
+{
+"Email": "Your Email", (can be empty)
+"phone": "Your Phone",  (can be empty)
+"gateway_key": "gateway from dashboard"
+"params": [
+      {
+          "tag": "parameter_1",(optional)
+          "value": "value 1"
+      },
+      {
+          "tag": "parameter_2", (optional)
+          "value": "value 2"
+      }
+  ]
+}</code></pre>
+
+              <img src="assets/images/rq-20.png" class="mw-50" alt="Responsive image"><br />
+              <img src="assets/images/rq-21.png" class="mw-50" alt="Responsive image">
+              <p class="alert alert-info">
+                Note : this custom personalize will only work for sms, email and WA long number
+              </p>
+            </section>
+
+            <hr class="divider">
+          </section>
+
+          <hr class="divider">
+
+          <section id="send_start">
+            <h1>Send</h1>
+            <h2>Getting Started</h2>
+            <p>If you read this document, you might have read the “request api” document before. if you are not yet read
+              it, you can read it <a
+                href="https://docs.google.com/document/d/1x3zpgW7HGaqVwM68qq-0NURzQfbFDtbv1pkr7CEnRRc/edit?usp=sharing"
+                target="_blank">here</a>.</p>
+            <p>Each platform will have the possibility of more than 1 vendor. What is a vendor? vendor is a service from
+              1 or more companies that have specific services for each platform.
+            </p>
+            <img src="assets/images/rq-1.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-2.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-3.png" class="mw-50" alt="Responsive image">
+            <hr class="divider">
+
+            <section id="send_preacquired">
+              <h2>Pre Acquired</h2>
+              <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
+                <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
+                registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
+                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
+                  target="_blank">here</a> for our staging. we will send it to you by email, you
+                will get
+                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                  href="https://wa.me/6285171535123" target="_blank">here</a>.
+                to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
+                  target="_blank">here</a> for <b>Production env</b>
+              </p>
+              <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
+                use
+              </p>
+              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
+                different account and different token
+              </p>
+              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                setting the Authorization HTTP header. Please refer to the detail below for further information about
+                how and where the Authorization can be implemented.</p>
+
+              <p class="alert alert-info mb-4">
+                Authorization: <b>{{type}} {{Token}}</b> <br />
+                type = <b>Bearer Token</b>
+                <br />
+                Token = <b>merchant_key</b>
+              </p>
+
+              <img src="assets/images/rq-4.png" class="mw-50" alt="Responsive image">
+            </section>
+
+            <hr class="divider">
+
+            <section id="send_endpoint">
+              <h2>HTTP Send Endpoint</h2>
+              <p>This Request Endpoint is needed for your integration process so that your system can request OTP
+                through Fazpass services</p>
+              <p class="alert alert-info mb-4">Base URL https://api.fazpass.com/
+              </p>
+              <p class="alert alert-warning mb-4">Staging http://34.101.82.250:3002/
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="send_otp">
+              <h2>API Send OTP</h2>
+              <p>Before you guys can use api send, you must set a gateway in the dashboard. You can read how to set the
+                gateway in the dashboard <a
+                  href="https://docs.google.com/document/d/1x3zpgW7HGaqVwM68qq-0NURzQfbFDtbv1pkr7CEnRRc/edit?usp=sharing"
+                  target="_blank"></a>here.</p>
+              <p>This Api will allow you to send OTP from any provider selected in the gateway with the OTP generated
+                from <b>your system</b>. We will send it to the user. and the user will verify it.</p>
+
+              <p class="alert alert-info mb-4">NOTE : THIS METHOD NOT SUPPORT FOR MISSCALL
+              </p>
+
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/send</b>
+{
+  "phone": "Yourphone",
+  "gateway_key": "gateway from dashboard",
+  "otp": "123456"
+}</code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Json Type </td>
+                    <td>Raw </td>
+                    <td>JSON method needed to use in the body </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>phone </td>
+                    <td>string </td>
+                    <td>end-user mobile number </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>gateway key </td>
+                    <td>string </td>
+                    <td>input with gateway key from the dashboard </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>Number </td>
+                    <td>input your generated OTP number </td>
+                    <td>required </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="send_otp_sms">
+              <h2>Send OTP SMS</h2>
+              <img src="assets/images/send-1.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="send_otp_wa">
+              <h2>Send OTP Whatsapp</h2>
+              <img src="assets/images/send-2.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP Length</td>
+                    <td>Number </td>
+                    <td>OTP length set from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="alert alert-info">note : For Whatsapp official if the number is new to the agregator system,
+                they will
+                check if the number have an association with whatsapps or not.
+                if the checking success, then you need to HIT AGAIN to send the OTP.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="send_api_validate_otp">
+              <h2>API Validate OTP (optional)</h2>
+              <p>If you already have the verification system, you can choose either implement this verification API or
+                you can just skip it.
+              </p>
+              <p>IF you guys skip this API, you won’t get any statistics regarding OTP send statistics, validation
+                success statistics and you can’t use automatic vendor switcher.
+                But if you implement our verification API, you can see and get all data and you can use our automatic
+                switcher feature.
+              </p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/verify</b>
+
+{
+  "otp_id": "your OTP ID",
+  "otp":"OTP inputed from user"
+}</code></pre>
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties</p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>OTP ID</td>
+                    <td>String </td>
+                    <td>OTP id generated from request API</td>
+                  </tr>
+                  <tr>
+                    <td>OTP </td>
+                    <td>Number </td>
+                    <td>OTP number inserted by user
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <img src="assets/images/rq-15.png" class="mw-50" alt="Responsive image"><br>
+              <img src="assets/images/rq-16.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p><b>Channel Response List</b></p>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sms</td>
+                    <td>this mean you use SMS as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>misscall</td>
+                    <td>this mean you use miss call as sending method for the OTP </td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp (coming soon)</td>
+                    <td>this mean you use official whatsapp channel as sending method for the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp Long Number (coming soon)</td>
+                    <td>this mean you use unofficial whatsapp channel / long number whatsapp version as sending method
+                      for
+                      the OTP</td>
+                  </tr>
+                  <tr>
+                    <td>email (coming soon)</td>
+                    <td>this mean you use email as sending method for the OTP</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p><b>Custome Personalize Messages
+                </b></p>
+              <p>if you need to more personalize message such as you need to add name by adding “parameter_1” to your
+                api
+                and dashboard like what shown bellow</p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/otp/request</b>
+
+{
+"Email": "Your Email", (can be empty)
+"phone": "Your Phone",  (can be empty)
+"gateway_key": "gateway from dashboard"
+"params": [
+      {
+          "tag": "parameter_1",(optional)
+          "value": "value 1"
+      },
+      {
+          "tag": "parameter_2", (optional)
+          "value": "value 2"
+      }
+  ]
+}</code></pre>
+
+              <img src="assets/images/rq-20.png" class="mw-50" alt="Responsive image"><br />
+              <img src="assets/images/rq-21.png" class="mw-50" alt="Responsive image">
+              <p class="alert alert-info">
+                Note : this custom personalize will only work for sms, email and WA long number
+              </p>
+            </section>
+
+            <hr class="divider">
+          </section>
+
+          <hr class="divider">
+
+          <section id="blasting_start">
+            <h1>Blasting</h1>
+            <h2>Getting Started</h2>
+            <p>if you read this document, you might have read the “otp” document before. if you are not yet read it, you
+              can read it <a
+                href="https://docs.google.com/document/d/1x3zpgW7HGaqVwM68qq-0NURzQfbFDtbv1pkr7CEnRRc/edit?usp=sharing"
+                target="_blank">here</a>.</p>
+            <p>Each platform will have the possibility of more than 1 vendor. What is a vendor? vendor is a service from
+              1 or more companies that have specific services for each platform.
+            </p>
+            <img src="assets/images/rq-1.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-2.png" class="mw-50" alt="Responsive image">
+            <img src="assets/images/rq-3.png" class="mw-50" alt="Responsive image">
+            <hr class="divider">
+
+            <section id="blasting_preacquired">
+              <h2>Pre Acquired</h2>
+              <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
+                <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
+                registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
+                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
+                  target="_blank">here</a> for our staging. we will send it to you by email, you
+                will get
+                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                  href="https://wa.me/6285171535123" target="_blank">here</a>.
+                to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
+                  target="_blank">here</a> for <b>Production env</b>
+              </p>
+              <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
+                use
+              </p>
+              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
+                different account and different token
+              </p>
+              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                setting the Authorization HTTP header. Please refer to the detail below for further information about
+                how and where the Authorization can be implemented.</p>
+
+              <p class="alert alert-info mb-4">
+                Authorization: <b>{{type}} {{Token}}</b> <br />
+                type = <b>Bearer Token</b>
+                <br />
+                Token = <b>merchant_key</b>
+              </p>
+
+              <img src="assets/images/rq-4.png" class="mw-50" alt="Responsive image">
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_send_endpoint">
+              <h2>HTTP Send Endpoint</h2>
+              <p>This Request Endpoint is needed for your integration process so that your system can request message
+                through Fazpass services</p>
+
+              <p class="alert alert-info mb-4">
+                Production https://api.fazpass.com/
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_api_blasting">
+              <h2>API Blasting message</h2>
+              <p>Before you guys can use api send, you must set a gateway in the dashboard</p>
+              <ol>
+                <li>
+                  <p class="mb-0"><b>Admin Side</b></p>
+                  <p>On the Admin side, the admin should do few things before the engineer can implement the API
+                    correctly. in this part, we will guide you, how to setup a gateway before you the engineer can
+                    integrate and use the Generate and verification API
+                  </p>
+                  <ol class="mb-3">
+                    <li>Admin login to Fazpass dashboard
+                    </li>
+                    <li>
+                      Admin go to proxy menu <br />
+                      <img src="assets/images/rq-6.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>Admin Add new gateway <br />
+                      <img src="assets/images/rq-7.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>
+                      Admin fill the form
+                      <table class="table table-bordered table-striped my-2">
+                        <thead>
+                          <tr>
+                            <th>Field</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Gateway </td>
+                            <td>Your gateway name </td>
+                          </tr>
+                          <tr>
+                            <td>Channel Name </td>
+                            <td>Select otp channel (misscall, SMS,email, whatsapp,etc)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Select Provider Name </td>
+                            <td>Select your desire provider e.x : Citcall
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Subject / title</td>
+                            <td>user for email OTP title (will be ignored for SMS,whatsapp and miss call)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Message </td>
+                            <td> Custom your message, please ensure use “{OTP}” to insert generate OTP in between your
+                              custom message (will be ignored for miss call and official whatsapp)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OTP Length </td>
+                            <td> min 4 max 8
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Note / purpose </td>
+                            <td> purpose for the gateway e.x login, register, transaction, etc
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Credential key </td>
+                            <td> If you have a special price from the provider, feel free to insert a credential key
+                              here.
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Enable gateway</td>
+                            <td> set gateway enable by clicking it
+
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <img src="assets/images/blast-3.png" class="img-fluid" alt="Responsive image">
+                      <img src="assets/images/blast-4.png" class="img-fluid" alt="Responsive image">
+                      <p> You can write HTML script directly, or upload a template file.
+                        make sure to put “&lt;HTML&gt;”,”
+
+                        &lt;/HTML&gt;”,”
+
+                        &lt;BODY&gt;”,”&lt;/BODY&gt;” tag to ensure the email will be rendered in all platform
+                      </p>
+                    </li>
+                    <li>Save the data <p class="mb-0">This step for the admin is finished. and the engineer can start
+                        integration in
+                        the API
+                        side
+                      </p>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <p class="mb-0"><b>Engineering Side</b></p>
+                  <p>On the engineering side, you as engineer will integrate Fazpass API in a view step.</p>
+                  <ol>
+                    <li>Login to dashboard</li>
+                    <li>
+                      Go to proxy menu
+                      <img src="assets/images/rq-9.png" class="img-fluid" alt="Responsive image">
+                    </li>
+                    <li>
+                      See the gateway purpose and gateway key
+                      <img src="assets/images/rq-10.png" class="img-fluid" alt="Responsive image">
+                      <p>If you get the gateway key, you can start to integrate the Fazpass OTP using <b>API
+                          generate</b> and then validate it using <b>API verification</b></p>
+                      <p class="mb-0">Before we jump to API, this is endpoint env for our setup</p>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+              <p class="alert alert-info mb-4">
+                NOTE : THIS METHOD NOT SUPPORT FOR MISSCALL
+              </p>
+              <p><b>HTTP Request Endpoint
+                </b></p>
+              <pre><code class="javascript"><b>POST {base_url}/v1/message/send</b>
+                
+{
+  "phone": "085726451070",//can be empty or not use
+  "email": "sigit.hnadi@gmail.com",
+  "gateway_key": "9c1abaff-ecdf-4b03-bf55-fa6f9be47b95",
+  "params": [
+      {
+          "tag": "parameter_1",
+          "value": "sigit"
+      },
+      {
+          "tag": "parameter_2",
+          "value": "Anda berhak mendapatkan promosi menarik dari kammi berupa promosi potongan harga sebesar 50%, berlaku sampai desember 2022"
+      }
+  ]
+}</code></pre>
+
+              <p>To use Fazpass API you need to submit a RAW JSON object to the body. The RAW JSON object takes the
+                following properties
+              </p>
+
+              <p class="alert alert-info mb-4">
+                the url is case sensitive
+              </p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Json Type </td>
+                    <td>Raw </td>
+                    <td>JSON method needed to use in the body </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>phone </td>
+                    <td>string </td>
+                    <td>end-user mobile number </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>Email </td>
+                    <td>string </td>
+                    <td>Email end-user </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>gateway key </td>
+                    <td>string </td>
+                    <td>input with gateway key from the dashboard </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>Tag</td>
+                    <td>string </td>
+                    <td>input yourtag inputted in the dashboard for dynamic text
+                      tag classified as Parameter_x, you can change “x” with number
+                    </td>
+                    <td>required </td>
+                  </tr>
+                  <tr>
+                    <td>Value</td>
+                    <td>string </td>
+                    <td>Value filled for the tag
+                      Parameter_x > can be filled with custom string up to 4096 char. <br /> <br />
+
+                      NOTES : we recommended to fill up to 1024 char due to limitation in whatsapp, and 140 chat for sms
+
+                    </td>
+                    <td>required </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p><b>Case and exsamples
+                </b></p>
+              <ol>
+                <li>
+                  <p>you have static text with dynamic variable such as “name”, “promo”</p>
+                  <img src="assets/images/blast-7.png" class="img-fluid" alt="Responsive image">
+                  <p>you can fill “parameter_1” with your users “name” and the “parameter_2” can be filled with your
+                    promotional content</p>
+                </li>
+                <li>
+                  <p>you need a completely dynamic long text send from your side</p>
+                  <img src="assets/images/blast-8.png" class="img-fluid" alt="Responsive image">
+                  <p>you can just put the “parameter_1” in our dashboard and you can fill the variable with your own
+                    word</p>
+                </li>
+              </ol>
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_sms_wa_email">
+              <h2>Send Long Message SMS / Whatsapp Long number / Email</h2>
+              <img src="assets/images/blast-9.png" class="mw-50" alt="Responsive image">
+              <p><b>Response status</b></p>
+
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Status</td>
+                    <td>Boolean </td>
+                    <td>
+                      Response status from request api <br />
+                      true = OTP send success, return message and data <br />
+                      false = OTP send failed, only return message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>response message regarding of status
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Data</td>
+                    <td>Array </td>
+                    <td>set array of data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>String </td>
+                    <td>OTP id generated after OTP generated
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OTP</td>
+                    <td>String </td>
+                    <td>OTP number send to user (masked)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>String </td>
+                    <td>Channel to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>String </td>
+                    <td>Provider to send OTP, setting from dashboard
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Purpose</td>
+                    <td>String </td>
+                    <td>Provider of using OTP, setting from dashboard to send OTP
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Message</td>
+                    <td>String </td>
+                    <td>Your Message
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="assets/images/blast-10.png" class="mw-50" alt="Responsive image"> <br />
+              <img src="assets/images/blast-11.png" class="mw-50" alt="Responsive image">
+              <p><b>Channel response list
+                </b></p>
+              <table class="table table-bordered table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sms</td>
+                    <td>
+                      this mean you use SMS as sending method for the message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp Long Number </td>
+                    <td>this mean you use unofficial whatsapp channel / long number whatsapp version as sending method
+                      for the message </td>
+                  </tr>
+                  <tr>
+                    <td>email </td>
+                    <td>this mean you use email as sending method for the message </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_loop_html">
+              <h2>Looping And HTML Render For Email (Additional)</h2>
+              <p>for looping case
+                you can add following code in your html template or you can download the full example code <a
+                  href="https://drive.google.com/file/d/1dixds-91VGxpvz7gar3tRoKAvEithJvk/view?usp=sharing"
+                  target="_blank">here</a>.</p>
+              <p>for custom template using HTML / css function as array data, you can refer <a
+                  href="https://drive.google.com/file/d/164WW8H3BvjyKZ0mTQQHexq5P3myKe3hc/view?usp=sharing"
+                  target="_blank">here</a>.</p>
+              <p>API hit with HTML tag in json data
+              </p>
+
+
+              <pre><code class="javascript">{
+  "email": "ikwanpuji90@gmail.com",
+  "gateway_key": "58982aaa-edf3-4e2a-824c-5f65dee33ce5",
+  "params": [
+  {
+    "tag": "loop",
+    "data": [
+      {
+        "header": [
+          {
+            "site_url": "http://localhost/bhi/?utm_source=system&utm_medium=email&utm_campaign=Thank you for shopping with Beauty Haul Indo!",
+            "site_logo": "http://localhost/bhi/assets/logo_beautyhaul.png"
+          }
+        ]
+      },
+      {
+        "footer": [
+          {
+            "ig_logo": "http://localhost/bhi/assets/ig.png",
+            "tiktok_logo": "http://localhost/bhi/assets/tiktok.png",
+            "fb_logo": "http://localhost/bhi/assets/fb.png",
+            "yt_logo": "http://localhost/bhi/assets/yt.png",
+            "line_logo": "http://localhost/bhi/assets/line2.png",
+            "wa_logo": "http://localhost/bhi/assets/wa.png",
+            "copyright_year": "2022",
+            "contact_link": "http://localhost/bhi/contact-us?utm_source=system&utm_medium=email&utm_campaign=Thank you for shopping with Beauty Haul Indo!"
+          }
+        ]
+      },
+      {
+        "payment_info": [
+          {
+            "va_number": "13448018955500072",
+            "how_to_link": "http://localhost/bhi/how-to-order/virtual-account-bca?utm_source=system&utm_medium=email&utm_campaign=Thank you for shopping with Beauty Haul Indo!"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "quantity": "20",
+            "subtotal": "100.000",
+            "product_variant": {
+              "option": "Size",
+              "value": "150ml"
+            },
+            "product_img": "",
+            "pre_order": {
+              "date": "2022-10-12"
+            },
+            "brand_title": "KLAIRS",
+            "product_title": "Gentle Black Fresh Cleansing Oil",
+            "detail_link": "http://localhost/bhi/product/detail/gentle-black-fresh-cleansing-oil?utm_source=system&utm_medium=email&utm_campaign=Thank you for shopping with Beauty Haul Indo!",
+            "children": []
+          }
+        ]
+      },
+      {
+        "calculation": [
+          {
+            "subtotal": "Rp 345.000",
+            "total": "Rp 500.000",
+            "discount": "",
+            "cc_discount": "",
+            "gc": {
+              "code": "",
+              "value": ""
+            },
+            "insurance": "",
+            "loyalty_points": "",
+            "wooden_crate": "",
+            "gift_wrap_service": "",
+            "uniq": "",
+            "service_charge": ""
+          }
+        ]
+      },
+      {
+        "shipping": [
+          {
+            "name": "da da",
+            "phone": "123213",
+            "address": "dada",
+            "address2": "",
+            "district": "Tagineri",
+            "city": "Kab. Jayawijaya",
+            "state": "Papua",
+            "country": "Indonesia",
+            "zip": "99557"
+          }
+        ]
+      },
+      {
+          "web":"&lt;h1 style='color:red;'>Sukses1&lt;/h1>",
+          "web2":[
+              { 
+                  "a":"&lt;h1 style='color:orange;'>Sukses2&lt;/h1>",
+                  "b":"&lt;h1 style='color:green;'>Sukses3&lt;/h1>",
+                  "c":{ 
+                      "d":"&lt;h1 style='color:blue;'>Sukses4&lt;/h1>",
+                      "e":"&lt;h1 style='color:yellow;'>Sukses5&lt;/h1>"
+                  }
+              }
+          ]
+      }
+    ]
+  },
+  {
+    "tag": "parameter_1",
+    "value": "Complete Your Payment"
+  },
+  {
+    "tag": "parameter_2",
+    "value": "Ikwan (ini dari parameter)"
+  },
+  {
+    "tag": "parameter_3",
+    "value": "&lt;div>Your order has been successfully placed. Please pay before &lt;span style=\"color:#E4002B; font-weight: 700;\">24 December 2022 14:15&lt;/span>&lt;/div>"
+  },
+  {
+    "tag": "parameter_4",
+    "value": "3RWXGWU3"
+  },
+  {
+    "tag": "parameter_5",
+    "value": "Rp 500.000"
+  },
+  {
+    "tag": "parameter_6",
+    "value": ""
+  },
+  {
+    "tag": "parameter_7",
+    "value": ""
+  }
+]
+}
+              </code></pre>
+
+              <p><b>1 loop</b></p>
+
+              <pre><code class="html">{{ range $key, $index := (index .Pages 0).detail }}
+  &lt;tr style="vertical-align:center;margin-top:2px;">
+  &lt;td align="center" style="width: 15%;">{{$index.nomor}} &lt;/td>
+  &lt;td align="center" style="width: 25%;">{{$index.sku}}&lt;/td> 
+  &lt;td align="center" style="width: 25%;">{{$index.qty}}&lt;/td> 
+  &lt;td align="center" style="width: 35%;">{{$index.price}}&lt;/td>
+  &lt;/tr>
+{{ end }}</code></pre>
+
+              <p><b>2-n loop</b></p>
+
+              <img src="assets/images/blast-12.png" class="mw-50" alt="Responsive image">
+
+              <pre><code class="html">// 1st array
+{{ range $key, $index := (index .Pages 0).detail }}
+&lt;tr style="vertical-align:center;margin-top:2px;">
+  &lt;td align="center" style="width: 15%;">{{$index.nomor}}&lt;/td>
+  &lt;td align="center" style="width: 25%;">{{$index.sku}}&lt;/td> 
+  &lt;td align="center" style="width: 25%;">{{$index.qty}}&lt;/td> 
+  &lt;td align="center" style="width: 35%;">{{$index.price}}&lt;/td>
+&lt;/tr>
+{{ end }}
+// sub-1st array
+&lt;tfooter>
+&lt;tr style="vertical-align:center">
+  &lt;th>Summary&lt;/th>
+  &lt;th>&lt;/th>
+  &lt;th>Total&lt;/th>
+  &lt;th align="center">{{ (index (index .Pages 1).summary 0).total}}&lt;/th>
+&lt;/tr>
+&lt;tr style="vertical-align:center">
+    &lt;th>&lt;/th>
+    &lt;th>&lt;/th>
+    &lt;th>Discount&lt;/th>
+    &lt;th align="center">{{ (index (index .Pages 1).summary 0).discount}}&lt;/th>
+&lt;/tr>
+&lt;/tfooter>
+// 2nd array
+
+{{ range $key, $index := (index .Pages 2).history }}
+&lt;tr style="vertical-align:center;margin-top:2px;">
+  &lt;td align="center" style="width: 15%;">{{$index.nomor}} &lt;/td>
+  &lt;td align="center" style="width: 35%;">{{$index.transaksi}}&lt;/td> 
+  &lt;td align="center" style="width: 25%;">{{$index.total}}&lt;/td> 
+  &lt;td align="center" style="width: 25%;">{{$index.point}}&lt;/td>
+&lt;/tr>
+{{ end }}</code></pre>
+              <p><b>API json exsample for N-array</b></p>
+              <pre><code class="javascript">{
+  "email": "sigit.handi@gmail.com",
+  "gateway_key": "dfe5c18f-084f-4f15-b238-65e26b28809a",
+  "params": [
+      {
+          "tag": "parameter_1",
+          "value": "Tuan Ikwan"
+      },
+      {
+          "tag": "payment",
+          "value": "3400"
+      },
+      {
+          "tag": "subtotal",
+          "value": "2900"
+      },
+      {
+          "tag": "shipping",
+          "value": "50"
+      },
+      {
+          "tag": "total",
+          "value": "3400"
+      },
+      {
+          "tag": "address",
+          "value": "Jl. Medan Merdeka Barat No.9, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110"
+      },
+      {
+          "tag": "loop",
+          "data": [
+             {
+                 "detail":[
+                      {
+                          "nomor": "1",
+                          "sku": "item-1",
+                          "qty": "2",
+                          "price": "2000"
+                      },
+                      {
+                          "nomor": "2",
+                          "sku": "item-2",
+                          "qty": "1",
+                          "price": "1000"
+                      }
+                 ]
+             },
+             {
+                 "summary":[
+                      {
+                          "total": "3000",
+                          "discount": "10"
+                      }
+                 ]
+             },
+             {
+                 "history":[
+                      {
+                          "nomor": "1",
+                          "transaksi": "inv/20221221/1",
+                          "total": "2800",
+                          "point": "10"
+                      },
+                      {
+                          "nomor": "2",
+                          "transaksi": "inv/20221201/11",
+                          "total": "2900",
+                          "point": "10"
+                      },
+                       {
+                          "nomor": "3",
+                          "transaksi": "inv/20221112/33",
+                          "total": "3300",
+                          "point": "5"
+                      }
+                 ]
+             }
+          ]
+      }
+  ]
+}</code></pre>
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_attachment">
+              <h2>Attachment </h2>
+              <p>attachment should be base 64<br />
+                maximum all attachment is 8MB / 8192KB
+              </p>
+
+              <pre><code class="javascript">{
+  "tag": "attach",
+  "attachments":[
+    {
+      "fileName":"click_button.png", 
+      "content": "BASE64 GENERATED STRING",
+    },
+    {
+      "fileName": "otp_usage.xlsx",
+      "content": "BASE64 GENERATED STRING",
+    },
+    {
+      "fileName": "abstrak.pdf",
+      "content": "BASE64 GENERATED STRING",
+    }
+  ]
+}</code></pre>
+            </section>
+
+            <hr class="divider">
+
+            <section id="blasting_misc">
+              <h2>MISC</h2>
+              <p>this section will redirect you if you have other flow implemented in your system.</p>
+              <p>for other function in admin dashboard, you can refer to <a
+                  href="https://docs.google.com/document/d/1WcmghzN5Rqh8o9LpVdCrepnyrdKl_Hj9dKfqzH_x2qw/edit?usp=sharing"
+                  target="_blank">this document</a></p>
+              <p>we also have ui/ux suggestion in the bellow section of this document</p>
+            </section>
+          </section>
+
+          <hr class="divider">
+
+          <section id="callback_start">
+            <h1>Callback Usage</h1>
+            <h2>Getting Started</h2>
+            <p>To enable callback please login to your dashboard by assessing <a href="https://dashboard.fazpass.com/"
+                target="_blank">https://dashboard.fazpass.com/</a>.</p>
+            <p>and go to the setting menu like in the picture bellow
+            </p>
+            <img src="assets/images/callback-1.png" class="mw-50" alt="Responsive image">
+            <p>Just enable the callback and input your callback URL</p>
+            <p>we will send you the callback using the below parameter.</p>
+
+            <hr class="divider">
+
+            <section id="callback_method_payload">
+              <h2>Method and Payload</h2>
+              <pre><code class="javascript"><b>POST</b>
+{
+  "otp_id": "",
+  "gateway_id": "",
+  "service": "Generate",
+  "provider": "citcall",
+  "product": "motp",
+  "phone": "6285643562378",
+  "prefix": "62213111",
+  "token" : "0661",
+  "status": "success", 
+  "dial_code": "200", -> 183 -> session
+  "dial_status": "OK", 
+  "call_status": "ANSWERED",  
+  "duration": 35,
+  "created_at": "2022-09-12T07:31:51+0000",
+  "reported_at": "2022-09-12T07:31:51+0000"
+}</code></pre>
+            </section>
+
+            <hr class="divider">
+
+            <section id="callback_apendix">
+              <h2>Apendix</h2>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>1XX</th>
+                    <th>Provisional</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>100</td>
+                    <td>Trying </td>
+                  </tr>
+                  <tr>
+                    <td>180 </td>
+                    <td>Ringing </td>
+                  </tr>
+                  <tr>
+                    <td>181 </td>
+                    <td>Call is being forwarded </td>
+                  </tr>
+                  <tr>
+                    <td>182 </td>
+                    <td>Queued </td>
+                  </tr>
+                  <tr>
+                    <td>183 </td>
+                    <td>Session in progres </td>
+                  </tr>
+                  <tr>
+                    <td>199 </td>
+                    <td>Early Dialogue Terminated </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>2XX</th>
+                    <th>Successfull</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>200</td>
+                    <td>OK </td>
+                  </tr>
+                  <tr>
+                    <td>201 </td>
+                    <td>Accepted </td>
+                  </tr>
+                  <tr>
+                    <td>204 </td>
+                    <td>No Notification</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>3XX</th>
+                    <th>Redirection</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>300</td>
+                    <td>Multiple Choice </td>
+                  </tr>
+                  <tr>
+                    <td>301 </td>
+                    <td>Moved Permanently </td>
+                  </tr>
+                  <tr>
+                    <td>302 </td>
+                    <td>Moved Temporarily</td>
+                  </tr>
+                  <tr>
+                    <td>305 </td>
+                    <td>Use Proxy </td>
+                  </tr>
+                  <tr>
+                    <td>380 </td>
+                    <td>Alternative Service </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>4XX</th>
+                    <th>Client Failure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>400</td>
+                    <td>Bad Request </td>
+                  </tr>
+                  <tr>
+                    <td>401 </td>
+                    <td>Unauthorized </td>
+                  </tr>
+                  <tr>
+                    <td>402 </td>
+                    <td>Payment Required</td>
+                  </tr>
+                  <tr>
+                    <td>403 </td>
+                    <td>Forbiden </td>
+                  </tr>
+                  <tr>
+                    <td>404 </td>
+                    <td>Not Found</td>
+                  </tr>
+                  <tr>
+                    <td>405 </td>
+                    <td>Method Not Allowed</td>
+                  </tr>
+                  <tr>
+                    <td>406 </td>
+                    <td>Not Acceptable</td>
+                  </tr>
+                  <tr>
+                    <td>407 </td>
+                    <td>Proxy Authentication Required</td>
+                  </tr>
+                  <tr>
+                    <td>408 </td>
+                    <td>Request Timeout</td>
+                  </tr>
+                  <tr>
+                    <td>409 </td>
+                    <td>Conflict</td>
+                  </tr>
+                  <tr>
+                    <td>410 </td>
+                    <td>Gone</td>
+                  </tr>
+                  <tr>
+                    <td>411 </td>
+                    <td>Length Required</td>
+                  </tr>
+                  <tr>
+                    <td>412 </td>
+                    <td>Conditional Request Failed</td>
+                  </tr>
+                  <tr>
+                    <td>413 </td>
+                    <td>Request Entity Too Large</td>
+                  </tr>
+                  <tr>
+                    <td>414 </td>
+                    <td>Request-URI Too Long</td>
+                  </tr>
+                  <tr>
+                    <td>415 </td>
+                    <td>Unsupported Media Type</td>
+                  </tr>
+                  <tr>
+                    <td>416 </td>
+                    <td>Unsupported URI Scheme</td>
+                  </tr>
+                  <tr>
+                    <td>417 </td>
+                    <td>Unknown Resource-Priority</td>
+                  </tr>
+                  <tr>
+                    <td>420 </td>
+                    <td>Bad Extension</td>
+                  </tr>
+                  <tr>
+                    <td>421 </td>
+                    <td>Extension Required</td>
+                  </tr>
+                  <tr>
+                    <td>422 </td>
+                    <td>Session Interval To Small</td>
+                  </tr>
+                  <tr>
+                    <td>423 </td>
+                    <td>Interval Too Brief</td>
+                  </tr>
+                  <tr>
+                    <td>424 </td>
+                    <td>Bad Location Information</td>
+                  </tr>
+                  <tr>
+                    <td>428 </td>
+                    <td>Use Indentity Header</td>
+                  </tr>
+                  <tr>
+                    <td>429 </td>
+                    <td>Provide Refferer Indentity</td>
+                  </tr>
+                  <tr>
+                    <td>430 </td>
+                    <td>Flow Failed</td>
+                  </tr>
+                  <tr>
+                    <td>433 </td>
+                    <td>Anonymity Disallowed</td>
+                  </tr>
+                  <tr>
+                    <td>436 </td>
+                    <td>Bad Indentity-Info</td>
+                  </tr>
+                  <tr>
+                    <td>437 </td>
+                    <td>Unsupported Certificate</td>
+                  </tr>
+                  <tr>
+                    <td>438 </td>
+                    <td>Invalid Indentity Header
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>439 </td>
+                    <td>First Hop Lacks Outbound Support</td>
+                  </tr>
+                  <tr>
+                    <td>470 </td>
+                    <td>Consent Needed</td>
+                  </tr>
+                  <tr>
+                    <td>480 </td>
+                    <td>Temporarily Unavailable</td>
+                  </tr>
+                  <tr>
+                    <td>481 </td>
+                    <td>Call/Transaction Does Not Exits</td>
+                  </tr>
+                  <tr>
+                    <td>482 </td>
+                    <td>Loop Detected</td>
+                  </tr>
+                  <tr>
+                    <td>483 </td>
+                    <td>Too Many Hoops
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>484 </td>
+                    <td>Address Incomplete</td>
+                  </tr>
+                  <tr>
+                    <td>485 </td>
+                    <td>Ambiguous</td>
+                  </tr>
+                  <tr>
+                    <td>486 </td>
+                    <td>Busy Here</td>
+                  </tr>
+                  <tr>
+                    <td>487 </td>
+                    <td>Request Terminated</td>
+                  </tr>
+                  <tr>
+                    <td>488 </td>
+                    <td>Not Acceptable Here</td>
+                  </tr>
+                  <tr>
+                    <td>489 </td>
+                    <td>Bad Event</td>
+                  </tr>
+                  <tr>
+                    <td>491 </td>
+                    <td>Request Pending</td>
+                  </tr>
+                  <tr>
+                    <td>493 </td>
+                    <td>Undecipherable</td>
+                  </tr>
+                  <tr>
+                    <td>494 </td>
+                    <td>Security Agreement Required</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>5XX</th>
+                    <th>Server Failure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>500</td>
+                    <td>Server Internal Error </td>
+                  </tr>
+                  <tr>
+                    <td>501 </td>
+                    <td>Not Implemented </td>
+                  </tr>
+                  <tr>
+                    <td>502 </td>
+                    <td>Bad Gateway</td>
+                  </tr>
+                  <tr>
+                    <td>503 </td>
+                    <td>Service Unavailable</td>
+                  </tr>
+                  <tr>
+                    <td>504 </td>
+                    <td>Server Time-out</td>
+                  </tr>
+                  <tr>
+                    <td>505 </td>
+                    <td>Version Not Supported
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>513 </td>
+                    <td>Message Too Large</td>
+                  </tr>
+                  <tr>
+                    <td>580 </td>
+                    <td>Precondition Failure</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-bordered table-striped mt-2 mb-4">
+                <thead>
+                  <tr>
+                    <th>6XX</th>
+                    <th>Global Failure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>600</td>
+                    <td>Busy Everywhere </td>
+                  </tr>
+                  <tr>
+                    <td>603 </td>
+                    <td>Decline</td>
+                  </tr>
+                  <tr>
+                    <td>604 </td>
+                    <td>Does Not Exits Anywhere
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>606 </td>
+                    <td>Not Acceptable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+
+          <hr class="divider">
+
+          <section id="health_start">
+            <h1>Health Status</h1>
+            <h2>Getting Started</h2>
+            <h2>OK</h2>
+            <img src="assets/images/health-1.png" class="mw-50" alt="Responsive image">
+            <p>if the system run s normal, the system status will return true</p>
+
+            <hr class="divider">
+
+            <section id="health_system_down">
+              <h2>System Down</h2>
+              <img src="assets/images/health-2.png" class="mw-50" alt="Responsive image">
+              <p>if the system run in to a problem, the system status will return false and message “vendor is down”</p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="health_suggest">
+              <h2>Suggest</h2>
+              <p>you can create a routing system, if the message is “vendor is down”and status is false, you can create
+                failover system to other gateway or to other otp vendor you have.</p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="health_webhook">
+              <h2>Webhook</h2>
+              <p>you can add a web hook for faster alert, this web hook will notify your system if one or some of our
+                services is not healthy.</p>
+              <img src="assets/images/health-3.png" class="mw-50" alt="Responsive image">
+              <p><a
+                  href="https://webhook.site/#!/59e91100-1ed5-4e97-8da3-bd663d33c5b2/af3154ef-0b50-44c0-b002-1ed0d5965e57/1"
+                  target="_blank">https://webhook.site/#!/59e91100-1ed5-4e97-8da3-bd663d33c5b2/af3154ef-0b50-44c0-b002-1ed0d5965e57/1</a>
+              </p>
+              <p><b>Status</b></p>
+              <p>"status": "unhealthy"<br />
+                for services that run without any problem
+              </p>
+              <p>"status": "healthy"<br />
+                for services that run with problem or down
+
+              </p>
+              <pre><code class="javascript"><b>POST</b>
+[
+  {
+    "vendor": "CitCall",
+    "data": [
+      {
+        "product": "MOTP",
+        "status": "unhealthy"
+      },
+      {
+        "product": "SMSOTP",
+        "status": "healthy"
+      },
+      {
+        "product": "SMS BLASTING",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "Damcorp",
+    "data": [
+      {
+        "product": "WhatsApp",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "Gupshup",
+    "data": [
+      {
+        "product": "WhatsApp",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "IMS",
+    "data": [
+      {
+        "product": "SMSOTP",
+        "status": "healthy"
+      },
+      {
+        "product": "SMS BLASTING",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "Kata.ai",
+    "data": [
+      {
+        "product": "WhatsApp",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "King One",
+    "data": [
+      {
+        "product": "WhatsApp Long Number",
+        "status": "healthy"
+      },
+      {
+        "product": "WhatsApp BLASTING",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "Mailgun",
+    "data": [
+      {
+        "product": "Email",
+        "status": "healthy"
+      },
+      {
+        "product": "Email BLASTING",
+        "status": "healthy"
+      }
+    ]
+  },
+  {
+    "vendor": "TapTalk",
+    "data": [
+      {
+        "product": "WhatsApp Long Number",
+        "status": "healthy"
+      },
+      {
+        "product": "WhatsApp BLASTING",
+        "status": "healthy"
+      }
+    ]
+  }
+]</code></pre>
+            </section>
+          </section>
+
+          <hr class="divider">
+
+          <section id="android_start">
+            <h1>Fazpass-Android (Fazpass Seamless)</h1>
+            <h2>Getting Started</h2>
+            <p>This is the Official Android wrapper/library for Fazpass Fazpass Seamless, that is compatible with
+              Gradle. Visit <a href="https://fazpass.com" target="_blank">https://fazpass.com</a> for more information
+              about the product and see documentation at <a
+                href="https://docs.google.com/document/d/1ehWsANE_nEtQgNIytzZudqpi18ZJ8un-dW2Z7eQK3qI/edit?usp=sharing"
+                target="_blank">DOC</a> or more technical details.</p>
+
+            <hr class="divider">
+
+            <section id="android_installation">
+              <h2>Installation</h2>
+              <p>Gradle</p>
+              <pre><code class="javascript">allprojects {
+  repositories {
+  ...
+  maven {
+    url "https://jitpack.io"
+    // You can obtain by contacting us
+    credentials { username authToken } 
+    }
+  }
+}</code></pre>
+              <p>implementation 'com.github.fazpass:fazpass-android-trusted-device-sdk:TAG'</p>
+              <p><b>Minimum OS</b></p>
+              <p>API 24 / Android 7.0 / Nougat</p>
+              <p><b>Target SDK</b></p>
+              <p>We use newest version of androidx library so make sure you use this configuration</p>
+              <pre><code class="javascript">android {
+compileSdk 33
+
+defaultConfig {
+    minSdk 24
+    targetSdk 33
+    .....</code></pre>
+              <p><b>Permission</b></p>
+              <p>As default this SDK used these permissions
+              </p>
+              <pre><code class="html">&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
+&lt;uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" />
+&lt;uses-permission android:name="android.permission.INTERNET"/>
+&lt;uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+&lt;uses-permission android:name="android.permission.RECEIVE_SMS" />
+&lt;uses-permission android:name="android.permission.READ_CALL_LOG"/></code></pre>
+              <p>So make sure you request all of these permission as a requirement.</p>
+              <table class="table table-striped my-2">
+                <thead>
+                  <tr>
+                    <th>Permission</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Coarse Location</td>
+                    <td>Will be used to read user location for detecting fraud access</td>
+                  </tr>
+                  <tr>
+                    <td>Read Phone State</td>
+                    <td>Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Read Phone Number</td>
+                    <td>Will be used to read SIM serial position. it will affect with confidence rate result</td>
+                  </tr>
+                  <tr>
+                    <td>Read Contacts</td>
+                    <td>Will be used to read user contact. It will affect with confidence rate result</td>
+                  </tr>
+                  <tr>
+                    <td>Use Biometric</td>
+                    <td>Will be used to open biometric dialog in user phone</td>
+                  </tr>
+                  <tr>
+                    <td>Receive SMS</td>
+                    <td>Will be used to auto read sms when OTP come by SMS</td>
+                  </tr>
+                  <tr>
+                    <td>Read Call Log</td>
+                    <td>Will be used to auto read otp when OTP come by missed call</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <hr class="divider">
+
+            <section id="android_usage">
+              <h2>Usage</h2>
+              <p><b>Initialize</b></p>
+              <p>You only need call this method once in the first page of your app</p>
+              <pre><code class="html">Fazpass.initialize(Context, MERCHANT_KEY, TD_MODE.STAGING)</code></pre>
+              <p>MERCHANT_KEY is unique string when you registered as a fazpass client. (You can check your email after
+                registered to get it)
+                TD_MODE is type of mode, you can choose between staging or production.
+              </p>
+
+              <p><b>OTP</b></p>
+              <p>We have request OTP by email and by phone. Same as like the API we also have generate Otp function if
+                you want to use it.</p>
+              <pre><code class="javascript">Fazpass.requestOtpByPhone(this, "PHONE_NUMBER", "GATEWAY_KEY", new Otp.Request() {
+  @Override
+  public void onComplete(OtpResponse response) {
+          // Response object will be came here,
+  }
+
+  @Override
+  public void onIncomingMessage(String otp) {
+          // If you use SMS/Missed Call gateway your OTP will come here. as long the permissions already allowed.
+  }
+
+  @Override
+  public void onError(Throwable err) {
+          // It should be always null.
+  }
+});</code></pre>
+              <p><b>Validating OTP</b></p>
+              <pre><code class="javascript">Fazpass.validateOtp(this, "OTP_ID", "OTP", new Otp.Validate() {
+  @Override
+  public void onComplete(boolean status) {
+  // Result of validating OTP (true/false)
+  }
+
+  @Override
+  public void onError(Throwable err) {
+  // It should be always null
+  }
+});</code></pre>
+
+              <hr class="divider">
+
+              <section id="android_header_enrichment">
+                <h2>Header Enrichment</h2>
+                <p>Header enrichment will make you more confidence, because it will match between data roaming and sim
+                  that registered in that phone.</p>
+                <p>The result, your app can't validate phone number that is not inside that phone.</p>
+                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", "PIN", new TrustedDeviceListener<FazpassTd>() {
+  @Override
+  public void onSuccess(FazpassTd o) {
+      if(o.td_status.equals(TRUSTED_DEVICE.TRUSTED)){
+          // You can pass
+      }
+  }
+
+  @Override
+  public void onFailure(Throwable err) {
+
+  }
+});</code></pre>
+              </section>
+
+              <hr class="divider">
+
+              <section id="android_trusted_device">
+                <h2>Trusted Device</h2>
+                <p>First of all you need to call this method in the main class of your application</p>
+                <pre><code class="javascript">Fazpass.initialize(this, MERCHANT_KEY,MODE.STAGING);</code></pre>
+                <p>you can get merchant key from email when you registered as our client.</p>
+                <p><b>General Flow (Check & Enroll)</b></p>
+                <img src="assets/images/sdk-1.png" class="mw-50" alt="" class="responsive-image">
+                <p>as you can see, trusted device need to always call check method that will return trusted status from
+                  that device.</p>
+                <p>After status already trusted you can directly call method enroll. In our system enroll will update
+                  the newest information from that device & user.</p>
+                <p class="alert alert-info">NB: never call enroll method if result of check is untrusted</p>
+                <p><b>Implementation</b></p>
+                <pre><code class="javascript">Fazpass.check(Context, "EMAIL", "PHONE" new TrustedDeviceListener<FazpassTd>() {
+  @Override
+  public void onSuccess(FazpassTd o) {
+      if(o.td_status.equals(TRUSTED_DEVICE.TRUSTED)){
+            o.enrollDeviceByPin(MainActivity.this, user, pin, new TrustedDeviceListener<EnrollStatus>() {
+              @Override
+              public void onSuccess() {
+                  // Trusted device success
+              }
+
+              @Override
+              public void onFailure(Throwable err) {
+                  //TODO handle error
+              }
+          });
+          // You can pass
+      }
+  }
+
+  @Override
+  public void onFailure(Throwable err) {
+      
+  }
+});</code></pre>
+                <p><b>Validate User & Device</b></p>
+                <p>It will calculating how confidence that user and that device with your app.</p>
+                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", new TrustedDeviceListener<FazpassTd>() {
+  @Override
+  public void onSuccess(FazpassTd o) {
+      o.validateUser(MainActivity.this, "PIN", new TrustedDeviceListener<ValidateStatus>() {
+          @Override
+          public void onSuccess(ValidateStatus o) {
+              if(o.getConfidenceRate()>=80){
+                  // This user confidence enough to do something
+              }
+          }
+          
+          @Override
+          public void onFailure(Throwable err) {
+          
+          }
+      });
+  }
+
+  @Override
+  public void onFailure(Throwable err) {
+
+  }
+});</code></pre>
+                <p class="alert alert-info">NB: If you use transaction inside your app, we recommended to use this
+                  method before transaction begin.</p>
+                <p><b>Cross Device Validation</b></p>
+                <img src="assets/images/sdk-2.png" class="mw-50" alt="" class="responsive-image">
+                <p>You can use this method when your client already registered with one phone number or email in one
+                  device, and trying to login with that email or phone in another device.</p>
+                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", new TrustedDeviceListener<FazpassTd>() {
+  @Override
+  public void onSuccess(FazpassTd o) {
+      if(o.cd_status.equals(CROSS_DEVICE.AVAILABLE)){
+          o.validateCrossDevice(MainActivity.this, COUNTDOWN, new CrossDeviceListener() {
+              @Override
+              public void onResponse(String device, boolean status) {
+                  // status will show the other device allow or not
+                  // device will show what device that already allow, if this user already register more than one device
+              }
+  
+              @Override
+              public void onExpired() {
+                  
+              }
+          });
+      }
+  }
+
+  @Override
+  public void onFailure(Throwable err) {
+
+  }
+});</code></pre>
+                <p class="alert alert-info">NB: For android 10 and higher make sure you add this line in your main
+                  activity launcher</p>
+                <pre><code class="javascript">Fazpass.launchedFromNotification(activity, intent, isRequirePin, @Nullable customDialogBuilder);</code></pre>
+                <p>It will show you dialog confirmation that required user to input PIN, before they can click button
+                  YES.</p>
+                <img src="assets/images/sdk-3.png" class="mw-30" alt="" class="responsive-image">
+                <p>This is your default view of your dialog.</p>
+                <img src="assets/images/sdk-4.png" class="mw-30" alt="" class="responsive-image">
+                <p>Or you can also create your own dialog that will be used for your application</p>
+                <p><b>Remove Device</b></p>
+                <p>It will remove that device and user.</p>
+                <pre><code class="javascript">Fazpass.removeDevice(Context, "PIN", new TrustedDeviceListener&lt;RemoveStatus>{
+  @Override
+  public void onSuccess() {
+      
+  }
+  
+  @Override
+  public void onError(Throwable err) {
+
+  }
+  
+});
+
+</code></pre>
+              </section>
+
+            </section>
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+        <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+          <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title=""
+              data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title=""
+              data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title=""
+              data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title=""
+              data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <p class="text-center">Copyright &copy; 2020 <a
+            href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights
+          Reserved.</p>
+        <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank"
+            href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
