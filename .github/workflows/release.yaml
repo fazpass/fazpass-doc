@@ -2,7 +2,7 @@ name: Push to GCR GitHub Action Fazpass Docs Production
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 env:
   REGISTRY: asia.gcr.io
