@@ -200,8 +200,8 @@
               <li class="nav-item"><a class="nav-link" href="#android_start">Getting Started</a></li>
               <li class="nav-item"><a class="nav-link" href="#android_installation">Installation</a></li>
               <li class="nav-item"><a class="nav-link" href="#android_usage">Usage</a>
-              <li class="nav-item"><a class="nav-link" href="#android_header_enrichment">Header Enrichment</a>
-              <li class="nav-item"><a class="nav-link" href="#android_trusted_device">Trusted Device</a>
+              <li class="nav-item"><a class="nav-link" href="#android_header_enrichment">Simbase</a>
+              <li class="nav-item"><a class="nav-link" href="#android_trusted_device">Seamless</a>
             </ul>
           </li>
         </ul>
@@ -3388,7 +3388,7 @@ defaultConfig {
                   </tr>
                   <tr>
                     <td>Read Phone State</td>
-                    <td>Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment
+                    <td>Will be used to detect root phone, emulator, or cloning, also will be used for Simbase
                     </td>
                   </tr>
                   <tr>
@@ -3462,8 +3462,8 @@ defaultConfig {
               <hr class="divider">
 
               <section id="android_header_enrichment">
-                <h2>Header Enrichment</h2>
-                <p>Header enrichment will make you more confidence, because it will match between data roaming and sim
+                <h2>Simbase</h2>
+                <p>Simbase will make you more confidence, because it will match between data roaming and sim
                   that registered in that phone.</p>
                 <p>The result, your app can't validate phone number that is not inside that phone.</p>
                 <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", "PIN", new TrustedDeviceListener<FazpassTd>() {
@@ -3484,13 +3484,13 @@ defaultConfig {
               <hr class="divider">
 
               <section id="android_trusted_device">
-                <h2>Trusted Device</h2>
+                <h2>Seamless</h2>
                 <p>First of all you need to call this method in the main class of your application</p>
                 <pre><code class="javascript">Fazpass.initialize(this, MERCHANT_KEY,MODE.STAGING);</code></pre>
                 <p>you can get merchant key from email when you registered as our client.</p>
                 <p><b>General Flow (Check & Enroll)</b></p>
                 <img src="assets/images/sdk-1.png" class="mw-50" alt="" class="responsive-image">
-                <p>as you can see, trusted device need to always call check method that will return trusted status from
+                <p>as you can see, Seamless need to always call check method that will return trusted status from
                   that device.</p>
                 <p>After status already trusted you can directly call method enroll. In our system enroll will update
                   the newest information from that device & user.</p>
@@ -3503,7 +3503,7 @@ defaultConfig {
             o.enrollDeviceByPin(MainActivity.this, user, pin, new TrustedDeviceListener<EnrollStatus>() {
               @Override
               public void onSuccess() {
-                  // Trusted device success
+                  // Seamless success
               }
 
               @Override
