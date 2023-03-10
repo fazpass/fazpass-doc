@@ -240,10 +240,7 @@
               <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
                 <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
                 registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
-                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
-                  target="_blank">here</a> for our staging. we will send it to you by email, you
-                will get
-                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                our <b>production</b>.we will send it to you by email, you will get email for the detailed access. If you have a problem, you can ask directly for our live support <a
                   href="https://wa.me/6285171535123" target="_blank">here</a>.
                 to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
                   target="_blank">here</a> for <b>Production env</b>
@@ -251,10 +248,7 @@
               <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
                 use
               </p>
-              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
-                different account and different token
-              </p>
-              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                         <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
                 setting the Authorization HTTP header. Please refer to the detail below for further information about
                 how and where the Authorization can be implemented.</p>
 
@@ -403,7 +397,7 @@
               <pre><code class="javascript"><b>POST {base_url}/v1/otp/request</b>
 
 {
-    "Email": "Your Email",
+    "Email": "Your Email", (optional)
     "phone": "Your Phone",
     "gateway_key": "gateway from dashboard"
 }
@@ -1018,10 +1012,7 @@
               <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
                 <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
                 registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
-                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
-                  target="_blank">here</a> for our staging. we will send it to you by email, you
-                will get
-                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                our <b>production</b>. we will send it to you by email, you will get email for the detailed access. If you have a problem, you can ask directly for our live support <a
                   href="https://wa.me/6285171535123" target="_blank">here</a>.
                 to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
                   target="_blank">here</a> for <b>Production env</b>
@@ -1029,9 +1020,7 @@
               <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
                 use
               </p>
-              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
-                different account and different token
-              </p>
+      
               <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
                 setting the Authorization HTTP header. Please refer to the detail below for further information about
                 how and where the Authorization can be implemented.</p>
@@ -1054,8 +1043,7 @@
                 through Fazpass services</p>
               <p class="alert alert-info mb-4">Base URL https://api.fazpass.com/
               </p>
-              <p class="alert alert-warning mb-4">Staging http://34.101.82.250:3002/
-              </p>
+              
             </section>
 
             <hr class="divider">
@@ -1071,7 +1059,7 @@
 
               <pre><code class="javascript"><b>POST {base_url}/v1/otp/generate</b>
 {
-    "Email": "Your Email",
+    "Email": "Your Email",(optional)
     "phone": "Your Phone",
     "gateway_key": "gateway from dashboard"
 }</code></pre>
@@ -1653,10 +1641,7 @@
               <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
                 <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
                 registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
-                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
-                  target="_blank">here</a> for our staging. we will send it to you by email, you
-                will get
-                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                our <b>production</b>.we will send it to you by email, you will get email for the detailed access. If you have a problem, you can ask directly for our live support <a
                   href="https://wa.me/6285171535123" target="_blank">here</a>.
                 to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
                   target="_blank">here</a> for <b>Production env</b>
@@ -1664,10 +1649,7 @@
               <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
                 use
               </p>
-              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
-                different account and different token
-              </p>
-              <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
+                     <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
                 setting the Authorization HTTP header. Please refer to the detail below for further information about
                 how and where the Authorization can be implemented.</p>
 
@@ -1689,8 +1671,7 @@
                 through Fazpass services</p>
               <p class="alert alert-info mb-4">Base URL https://api.fazpass.com/
               </p>
-              <p class="alert alert-warning mb-4">Staging http://34.101.82.250:3002/
-              </p>
+             
             </section>
 
             <hr class="divider">
@@ -2090,10 +2071,7 @@
               <p>Before you can use all the services in fazpass, such as OTP, misscall and verification you must have
                 <b>merchant_key (Token)</b> for accessing fazpass API. you can get <b>merchant_key (Token)</b> by
                 registering <a href="https://dashboard.fazpass.com/register" target="_blank">here</a> for
-                our <b>production</b>. and you can register <a href="http://34.101.82.250/register"
-                  target="_blank">here</a> for our staging. we will send it to you by email, you
-                will get
-                email for the detailed access. If you have a problem, you can ask directly for our live support <a
+                our <b>production</b>.we will send it to you by email, you will get email for the detailed access. If you have a problem, you can ask directly for our live support <a
                   href="https://wa.me/6285171535123" target="_blank">here</a>.
                 to accessing our dashboard, you can go <a href="https://dashboard.fazpass.com/login"
                   target="_blank">here</a> for <b>Production env</b>
@@ -2101,9 +2079,7 @@
               <p class="alert alert-info mb-4">Note : You need to use merchant_key (Token) for every API / Services you
                 use
               </p>
-              <p class="alert alert-warning mb-4">Note : There will be 2 ENV, Production and Staging, each ENV will have
-                different account and different token
-              </p>
+            
               <p>To use Fazpass API you need authentication using <b>merchant_key (Token)</b> . That can be done by
                 setting the Authorization HTTP header. Please refer to the detail below for further information about
                 how and where the Authorization can be implemented.</p>
@@ -3367,58 +3343,7 @@ defaultConfig {
     minSdk 24
     targetSdk 33
     .....</code></pre>
-              <p><b>Permission</b></p>
-              <p>As default this SDK used these permissions
-              </p>
-              <pre><code class="html">&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
-&lt;uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
-&lt;uses-permission android:name="android.permission.READ_CONTACTS" />
-&lt;uses-permission android:name="android.permission.INTERNET"/>
-&lt;uses-permission android:name="android.permission.USE_BIOMETRIC"/>
-&lt;uses-permission android:name="android.permission.RECEIVE_SMS" />
-&lt;uses-permission android:name="android.permission.READ_CALL_LOG"/></code></pre>
-              <p>So make sure you request all of these permission as a requirement.</p>
-              <table class="table table-striped my-2">
-                <thead>
-                  <tr>
-                    <th>Permission</th>
-                    <th>Detail</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Coarse Location</td>
-                    <td>Will be used to read user location for detecting fraud access</td>
-                  </tr>
-                  <tr>
-                    <td>Read Phone State</td>
-                    <td>Will be used to detect root phone, emulator, or cloning, also will be used for Simbase
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Read Phone Number</td>
-                    <td>Will be used to read SIM serial position. it will affect with confidence rate result</td>
-                  </tr>
-                  <tr>
-                    <td>Read Contacts</td>
-                    <td>Will be used to read user contact. It will affect with confidence rate result</td>
-                  </tr>
-                  <tr>
-                    <td>Use Biometric</td>
-                    <td>Will be used to open biometric dialog in user phone</td>
-                  </tr>
-                  <tr>
-                    <td>Receive SMS</td>
-                    <td>Will be used to auto read sms when OTP come by SMS</td>
-                  </tr>
-                  <tr>
-                    <td>Read Call Log</td>
-                    <td>Will be used to auto read otp when OTP come by missed call</td>
-                  </tr>
-                </tbody>
-              </table>
+             
             </section>
 
             <hr class="divider">
@@ -3464,7 +3389,32 @@ defaultConfig {
   // It should be always null
   }
 });</code></pre>
+		 <p><b>Permission</b></p>
 
+<pre><code class="html">
+ 	&lt;uses-permission android:name="android.permission.INTERNET"/>
+    &lt;uses-permission android:name="android.permission.RECEIVE_SMS" />
+    &lt;uses-permission android:name="android.permission.READ_CALL_LOG"/>
+	</code></pre>
+
+	<table class="table table-striped my-2">
+	<thead>
+	<tr>
+	<th>Permission</th>
+	<th align="center">Detail</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>Receive SMS</td>
+	<td align="center">Will be used to auto read sms when OTP come by SMS</td>
+	</tr>
+	<tr>
+	<td>Read Call Log</td>
+	<td align="center">Will be used to auto read otp when OTP come by missed call</td>
+	</tr>
+	</tbody>
+	</table>
               <hr class="divider">
 
               <section id="android_header_enrichment">
@@ -3485,8 +3435,35 @@ defaultConfig {
 
   }
 });</code></pre>
-              </section>
+ </section>
 
+<p><b>Permission</b></p>
+<pre>
+	<code class="html">
+&lt;uses-permission android:name="android.permission.INTERNET"/>
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
+&lt;uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	
+</code></pre>
+
+<table class="table table-striped my-2">
+<thead>
+<tr>
+<th>Permission</th>
+<th align="center">Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read Phone State</td>
+<td align="center">Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment</td>
+</tr>
+<tr>
+<td>Change Network State</td>
+<td align="center">Will be used to autoswitch connection to mobile on HE validation</td>
+</tr>
+</tbody>
+</table>
               <hr class="divider">
 
               <section id="android_trusted_device">
@@ -3607,6 +3584,47 @@ defaultConfig {
 
 </code></pre>
               </section>
+
+<p><b>Permission</b></p>
+
+<pre><code class="html">
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
+&lt;uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" />
+&lt;uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+</code></pre>
+<table class="table table-striped my-2">
+<thead>
+<tr>
+<th>Permission</th>
+<th align="center">Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coarse Location</td>
+<td align="center">Will be used to read user location for detecting fraud access</td>
+</tr>
+<tr>
+<td>Read Phone State</td>
+<td align="center">Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment</td>
+</tr>
+<tr>
+<td>Read Phone Number</td>
+<td align="center">Will be used to read SIM serial position. it will affect with confidence rate result</td>
+</tr>
+<tr>
+<td>Read Contacts</td>
+<td align="center">Will be used to read user contact. It will affect with confidence rate result</td>
+</tr>
+<tr>
+<td>Use Biometric</td>
+<td align="center">Will be used to open biometric dialog in user phone</td>
+</tr>
+</tbody>
+</table>
 
             </section>
         </div>
