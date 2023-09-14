@@ -220,10 +220,6 @@
           <li class="nav-item"><a class="nav-link" href="#android_start">Fazpass-Android (Fazpass Seamless)</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#android_start">Getting Started</a></li>
-              <li class="nav-item"><a class="nav-link" href="#android_installation">Installation</a></li>
-              <li class="nav-item"><a class="nav-link" href="#android_usage">Usage</a>
-              <li class="nav-item"><a class="nav-link" href="#android_header_enrichment">Simbase</a>
-              <li class="nav-item"><a class="nav-link" href="#android_trusted_device">Seamless</a>
             </ul>
           </li>
         </ul>
@@ -3323,324 +3319,27 @@
 
           <hr class="divider">
 
-          <section id="android_start">
+          <section id="android_start" style="min-height:500px;">
             <h1>Fazpass-Android (Fazpass Seamless)</h1>
             <h2>Getting Started</h2>
             <p>This is the Official Android wrapper/library for Fazpass Fazpass Seamless, that is compatible with
               Gradle. Visit <a href="https://fazpass.com" target="_blank">https://fazpass.com</a> for more information
               about the product and see documentation at <a
-                href="https://docs.google.com/document/d/1ehWsANE_nEtQgNIytzZudqpi18ZJ8un-dW2Z7eQK3qI/edit?usp=sharing"
+                href="https://github.com/fazpass/seamless-documentation"
                 target="_blank">DOC</a> or more technical details.</p>
 
-            <hr class="divider">
-
             <section id="android_installation">
-              <h2>Installation</h2>
-              <p>Gradle</p>
-              <pre><code class="javascript">allprojects {
-  repositories {
-  ...
-  maven {
-    url "https://jitpack.io"
-    // You can obtain by contacting us
-    credentials { username authToken } 
-    }
-  }
-}</code></pre>
-              <p>implementation 'com.github.fazpass:fazpass-android-trusted-device-sdk:TAG'</p>
-              <p><b>Minimum OS</b></p>
-              <p>API 24 / Android 7.0 / Nougat</p>
-              <p><b>Target SDK</b></p>
-              <p>We use newest version of androidx library so make sure you use this configuration</p>
-              <pre><code class="javascript">android {
-compileSdk 33
-
-defaultConfig {
-    minSdk 24
-    targetSdk 33
-    .....</code></pre>
              
             </section>
 
-            <hr class="divider">
-
             <section id="android_usage">
-              <h2>Usage</h2>
-              <p><b>Initialize</b></p>
-              <p>You only need call this method once in the first page of your app</p>
-              <pre><code class="html">Fazpass.initialize(Context, MERCHANT_KEY, TD_MODE.STAGING)</code></pre>
-              <p>MERCHANT_KEY is unique string when you registered as a fazpass client. (You can check your email after
-                registered to get it)
-                TD_MODE is type of mode, you can choose between staging or production.
-              </p>
-
-              <p><b>OTP</b></p>
-              <p>We have request OTP by email and by phone. Same as like the API we also have generate Otp function if
-                you want to use it.</p>
-              <pre><code class="javascript">Fazpass.requestOtpByPhone(this, "PHONE_NUMBER", "GATEWAY_KEY", new Otp.Request() {
-  @Override
-  public void onComplete(OtpResponse response) {
-          // Response object will be came here,
-  }
-
-  @Override
-  public void onIncomingMessage(String otp) {
-          // If you use SMS/Missed Call gateway your OTP will come here. as long the permissions already allowed.
-  }
-
-  @Override
-  public void onError(Throwable err) {
-          // It should be always null.
-  }
-});</code></pre>
-              <p><b>Validating OTP</b></p>
-              <pre><code class="javascript">Fazpass.validateOtp(this, "OTP_ID", "OTP", new Otp.Validate() {
-  @Override
-  public void onComplete(boolean status) {
-  // Result of validating OTP (true/false)
-  }
-
-  @Override
-  public void onError(Throwable err) {
-  // It should be always null
-  }
-});</code></pre>
-		 <p><b>Permission</b></p>
-
-<pre><code class="html">
- 	&lt;uses-permission android:name="android.permission.INTERNET"/>
-    &lt;uses-permission android:name="android.permission.RECEIVE_SMS" />
-    &lt;uses-permission android:name="android.permission.READ_CALL_LOG"/>
-	</code></pre>
-
-	<table class="table table-striped my-2">
-	<thead>
-	<tr>
-	<th>Permission</th>
-	<th align="center">Detail</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td>Receive SMS</td>
-	<td align="center">Will be used to auto read sms when OTP come by SMS</td>
-	</tr>
-	<tr>
-	<td>Read Call Log</td>
-	<td align="center">Will be used to auto read otp when OTP come by missed call</td>
-	</tr>
-	</tbody>
-	</table>
-              <hr class="divider">
+              
 
               <section id="android_header_enrichment">
-                <h2>Simbase</h2>
-                <p>Simbase will make you more confidence, because it will match between data roaming and sim
-                  that registered in that phone.</p>
-                <p>The result, your app can't validate phone number that is not inside that phone.</p>
-                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", "PIN", new TrustedDeviceListener<FazpassTd>() {
-  @Override
-  public void onSuccess(FazpassTd o) {
-      if(o.td_status.equals(TRUSTED_DEVICE.TRUSTED)){
-          // You can pass
-      }
-  }
-
-  @Override
-  public void onFailure(Throwable err) {
-
-  }
-});</code></pre>
- </section>
-
-<p><b>Permission</b></p>
-<pre>
-	<code class="html">
-&lt;uses-permission android:name="android.permission.INTERNET"/>
-&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
-&lt;uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-	
-</code></pre>
-
-<table class="table table-striped my-2">
-<thead>
-<tr>
-<th>Permission</th>
-<th align="center">Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Read Phone State</td>
-<td align="center">Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment</td>
-</tr>
-<tr>
-<td>Change Network State</td>
-<td align="center">Will be used to autoswitch connection to mobile on HE validation</td>
-</tr>
-</tbody>
-</table>
-              <hr class="divider">
-
-              <section id="android_trusted_device">
-                <h2>Seamless</h2>
-                <p>First of all you need to call this method in the main class of your application</p>
-                <pre><code class="javascript">Fazpass.initialize(this, MERCHANT_KEY,MODE.STAGING);</code></pre>
-                <p>you can get merchant key from email when you registered as our client.</p>
-                <p><b>General Flow (Check & Enroll)</b></p>
-                <img src="assets/images/sdk-1.png" class="mw-50" alt="" class="responsive-image">
-                <p>as you can see, Seamless need to always call check method that will return trusted status from
-                  that device.</p>
-                <p>After status already trusted you can directly call method enroll. In our system enroll will update
-                  the newest information from that device & user.</p>
-                <p class="alert alert-info">NB: never call enroll method if result of check is untrusted</p>
-                <p><b>Implementation</b></p>
-                <pre><code class="javascript">Fazpass.check(Context, "EMAIL", "PHONE" new TrustedDeviceListener<FazpassTd>() {
-  @Override
-  public void onSuccess(FazpassTd o) {
-      if(o.td_status.equals(TRUSTED_DEVICE.TRUSTED)){
-            o.enrollDeviceByPin(MainActivity.this, user, pin, new TrustedDeviceListener<EnrollStatus>() {
-              @Override
-              public void onSuccess() {
-                  // Seamless success
-              }
-
-              @Override
-              public void onFailure(Throwable err) {
-                  //TODO handle error
-              }
-          });
-          // You can pass
-      }
-  }
-
-  @Override
-  public void onFailure(Throwable err) {
-      
-  }
-});</code></pre>
-                <p><b>Validate User & Device</b></p>
-                <p>It will calculating how confidence that user and that device with your app.</p>
-                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", new TrustedDeviceListener<FazpassTd>() {
-  @Override
-  public void onSuccess(FazpassTd o) {
-      o.validateUser(MainActivity.this, "PIN", new TrustedDeviceListener<ValidateStatus>() {
-          @Override
-          public void onSuccess(ValidateStatus o) {
-              if(o.getConfidenceRate()>=80){
-                  // This user confidence enough to do something
-              }
-          }
-          
-          @Override
-          public void onFailure(Throwable err) {
-          
-          }
-      });
-  }
-
-  @Override
-  public void onFailure(Throwable err) {
-
-  }
-});</code></pre>
-                <p class="alert alert-info">NB: If you use transaction inside your app, we recommended to use this
-                  method before transaction begin.</p>
-                <p><b>Cross Device Validation</b></p>
-                <img src="assets/images/sdk-2.png" class="mw-50" alt="" class="responsive-image">
-                <p>You can use this method when your client already registered with one phone number or email in one
-                  device, and trying to login with that email or phone in another device.</p>
-                <pre><code class="javascript">Fazpass.check(this, "EMAIL", "PHONE", new TrustedDeviceListener<FazpassTd>() {
-  @Override
-  public void onSuccess(FazpassTd o) {
-      if(o.cd_status.equals(CROSS_DEVICE.AVAILABLE)){
-          o.validateCrossDevice(MainActivity.this, COUNTDOWN, new CrossDeviceListener() {
-              @Override
-              public void onResponse(String device, boolean status) {
-                  // status will show the other device allow or not
-                  // device will show what device that already allow, if this user already register more than one device
-              }
-  
-              @Override
-              public void onExpired() {
-                  
-              }
-          });
-      }
-  }
-
-  @Override
-  public void onFailure(Throwable err) {
-
-  }
-});</code></pre>
-                <p class="alert alert-info">NB: For android 10 and higher make sure you add this line in your main
-                  activity launcher</p>
-                <pre><code class="javascript">Fazpass.launchedFromNotification(activity, intent, isRequirePin, @Nullable customDialogBuilder);</code></pre>
-                <p>It will show you dialog confirmation that required user to input PIN, before they can click button
-                  YES.</p>
-                <img src="assets/images/sdk-3.png" class="mw-30" alt="" class="responsive-image">
-                <p>This is your default view of your dialog.</p>
-                <img src="assets/images/sdk-4.png" class="mw-30" alt="" class="responsive-image">
-                <p>Or you can also create your own dialog that will be used for your application</p>
-                <p><b>Remove Device</b></p>
-                <p>It will remove that device and user.</p>
-                <pre><code class="javascript">Fazpass.removeDevice(Context, "PIN", new TrustedDeviceListener&lt;RemoveStatus>{
-  @Override
-  public void onSuccess() {
-      
-  }
-  
-  @Override
-  public void onError(Throwable err) {
-
-  }
-  
-});
-
-</code></pre>
               </section>
 
-<p><b>Permission</b></p>
-
-<pre><code class="html">
-&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
-&lt;uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
-&lt;uses-permission android:name="android.permission.READ_CONTACTS" />
-&lt;uses-permission android:name="android.permission.USE_BIOMETRIC"/>
-</code></pre>
-<table class="table table-striped my-2">
-<thead>
-<tr>
-<th>Permission</th>
-<th align="center">Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Coarse Location</td>
-<td align="center">Will be used to read user location for detecting fraud access</td>
-</tr>
-<tr>
-<td>Read Phone State</td>
-<td align="center">Will be used to detect root phone, emulator, or cloning, also will be used for Header Enrichment</td>
-</tr>
-<tr>
-<td>Read Phone Number</td>
-<td align="center">Will be used to read SIM serial position. it will affect with confidence rate result</td>
-</tr>
-<tr>
-<td>Read Contacts</td>
-<td align="center">Will be used to read user contact. It will affect with confidence rate result</td>
-</tr>
-<tr>
-<td>Use Biometric</td>
-<td align="center">Will be used to open biometric dialog in user phone</td>
-</tr>
-</tbody>
-</table>
+              <section id="android_trusted_device">
+              </section>
 
             </section>
         </div>
