@@ -39,4 +39,5 @@ jobs:
           project_id: ${{ env.PROJECT_ID }}
           image_name: ${{ env.REGISTRY_NAME }}
           dockerfile: ./Dockerfile
+          context: ./
           image_tag: latest,${{ steps.vars.outputs.sha_short }}
