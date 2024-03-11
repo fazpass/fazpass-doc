@@ -148,7 +148,7 @@
               <li class="nav-item"><a class="nav-link" href="#request_ui_ux">UI / UX Suggestion</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#generate_start">Generate</a>
+          <li class="nav-item d-none"><a class="nav-link" href="#generate_start">Generate</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#generate_start">Getting Started</a></li>
               <li class="nav-item"><a class="nav-link" href="#generate_preacquired">Pre Acquired</a></li>
@@ -1004,7 +1004,8 @@
 
           <hr class="divider">
 
-          <section id="generate_start">
+          <!-- hidden start -->
+          <section class="d-none" id="generate_start">
             <h1>Generate</h1>
             <h2>Getting Started</h2>
             <p>If you read this document, you might have read the “request api” document before. if you are not yet read
@@ -1630,8 +1631,8 @@
 
             <hr class="divider">
           </section>
-
-          <hr class="divider">
+          <hr class="divider d-none">
+          <!-- hidden end -->
 
           <section id="send_start" class="d-none">
             <h1>Send</h1>
@@ -2061,7 +2062,7 @@
             <hr class="divider">
           </section>
 
-          <hr class="divider">
+          <hr class="divider d-none">
 
           <section id="blasting_start">
             <h1>Blasting</h1>
