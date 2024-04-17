@@ -222,6 +222,8 @@
               <li class="nav-item"><a class="nav-link" href="#android_start">Getting Started</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="#update_otp">Update OTP Status</a>
+          </li>
         </ul>
       </div>
 
@@ -2793,21 +2795,18 @@
               <h2>Method and Payload</h2>
               <pre><code class="javascript"><b>POST</b>
 {
-  "otp_id": "",
-  "gateway_id": "",
-  "service": "Generate",
-  "provider": "citcall",
-  "product": "motp",
-  "phone": "6285643562378",
-  "prefix": "62213111",
-  "token" : "0661",
-  "status": "success", 
-  "dial_code": "200", -> 183 -> session
-  "dial_status": "OK", 
-  "call_status": "ANSWERED",  
-  "duration": 35,
-  "created_at": "2022-09-12T07:31:51+0000",
-  "reported_at": "2022-09-12T07:31:51+0000"
+  "transaction_id": "b3008bd0-92b6-496a-87df-e8cdaf904231",
+  "service": "otp",
+  "gateway": "9affcc7b-47d2-4cb8-9ab2-4d9ae862b5ae",
+  "method": "Generate",
+  "provider": "Wavecell",
+  "product": "SMSOTP",
+  "phone": "6285726451070",
+  "token": "8489",
+  "status": "DELIVERED",
+  "duration": 4887872836,
+  "created_at": "2024-03-12T05:03:17Z",
+  "reported_at": "2024-03-12T05:03:16Z"
 }</code></pre>
             </section>
 
@@ -3328,21 +3327,20 @@
               about the product and see documentation at <a
                 href="https://github.com/fazpass/seamless-documentation"
                 target="_blank">DOC</a> or more technical details.</p>
+          </section>
 
-            <section id="android_installation">
-             
-            </section>
+          <section id="update_otp" style="min-height:500px;">
+            <h1>Update OTP Status</h1>
+            <p>This API only use to send your verification status to our system, the verification will be happened in your system not in fazpass system</p>
+            <b>Update OTP :</b>
+            <pre><code class="javascript"><b>POST {base_url}/v1/otp/update_verified</b>
 
-            <section id="android_usage">
-              
-
-              <section id="android_header_enrichment">
-              </section>
-
-              <section id="android_trusted_device">
-              </section>
-
-            </section>
+{
+    "otp_id" : "your OTP id"
+}
+            </code>
+            </pre>
+          </section>
         </div>
       </div>
 
