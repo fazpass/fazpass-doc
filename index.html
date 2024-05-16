@@ -224,6 +224,8 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="#update_otp">Update OTP Status</a>
           </li>
+          <li class="nav-item"><a class="nav-link" href="#status_delivery">Status Delivery</a>
+          </li>
         </ul>
       </div>
 
@@ -3340,6 +3342,63 @@
 }
             </code>
             </pre>
+          </section>
+
+          <section id="status_delivery" style="min-height:500px;">
+            <h1>Public Masking Status Delivery</h1>
+            <ul>
+              <li><p><b>PROCESSING - </b> the message has been received by our platform and it is currently being processed before being send to the carrier.</p></li>
+              <li><p><b>SENT - </b> The message has been sent to the operator and Fazpass has not yet received an acknowledgement yet from the operator.</p></li>
+              <li><p><b>DELIVERED - </b> Means the message has been "delivered to the handset". If the status is not available from the operators, this means that Fazpass has received the confirmation from the carrier that the message has been "delivered to the carrier".</p></li>
+              <li>
+                <p class="mb-0"><b>UNDELIVERED/REJECTED - </b> We have received confirmation that the message was not delivered. This can be due to various reasons such as :</p>
+                <ol class="mb-2">
+                  <li>Mobile Handset is unavailable (e.g. mobile is switched off or on roaming mode)</li>
+                  <li>Filtered out by the operator</li>
+                </ol>
+              </li>
+              <li><p><b>ERROR - </b> The message has not been accepted by our platform. this can bue due to some error such as incorrect mobile number or insufficient credit. You will not be charged for error messages.</p></li>
+              <li><p><b>Verified - </b> The OTP not only received by the user, but the user already input and validate the right number in the application.</p></li>
+            </ul>
+
+            <table class="table table-bordered table-striped mt-2 mb-4">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PROCESSING</td>
+                  <td>Not Carged </td>
+                </tr>
+                <tr>
+                  <td>ERROR </td>
+                  <td>Not Carged </td>
+                </tr>
+                <tr>
+                  <td>SENT </td>
+                  <td>Carge </td>
+                </tr>
+                <tr>
+                  <td>DELIVERED </td>
+                  <td>Carge </td>
+                </tr>
+                <tr>
+                  <td>REJECTED </td>
+                  <td>Carge </td>
+                </tr>
+                <tr>
+                  <td>UNDELIVERED </td>
+                  <td>Carge </td>
+                </tr>
+                <tr>
+                  <td>Verified </td>
+                  <td>Carge </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </div>
       </div>
